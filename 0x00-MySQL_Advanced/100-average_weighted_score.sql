@@ -1,3 +1,4 @@
+-- 
 --  creates a stored procedure
 DROP PROCEDURE IF EXISTS ComputeAverageWeightedScoreForUser;
 DELIMITER $$
