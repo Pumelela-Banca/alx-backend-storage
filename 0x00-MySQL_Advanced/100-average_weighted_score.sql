@@ -1,6 +1,6 @@
 --  creates a stored procedure
 DROP PROCEDURE IF EXISTS ComputeAverageWeightedScoreForUser;
-DELIMITER //
+DELIMITER $$
 CREATE PROCEDURE ComputeAverageWeightedScoreForUser (user_id INT)
 BEGIN
     DECLARE total_weighted_score INT DEFAULT 0;
@@ -29,5 +29,5 @@ BEGIN
             SET users.average_score = total_weighted_score / total_weight
             WHERE users.id = user_id;
     END IF;
-END //
+END $$
 DELIMITER ;
