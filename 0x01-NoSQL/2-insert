@@ -1,2 +1,2 @@
-// creates new dbs
-use my_db
+// inserts into new dbs
+dbs.school.insert({"name": "Holberton school"})
