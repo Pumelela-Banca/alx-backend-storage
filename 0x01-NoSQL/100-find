@@ -1,0 +1,2 @@
+// List  all docs with name Holberton
+db.my_db.find({"name": "Holberton school"}, {"_id": 1, "name": 1})
